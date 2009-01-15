@@ -1,3 +1,6 @@
 [submodule "processingjs"]
 	path = processingjs
 	url = git://github.com/jeresig/processing-js.git
+[submodule "ruby-processing"]
+	path = ruby-processing
+	url = git://github.com/ren/ruby-processing.git
