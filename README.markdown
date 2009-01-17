@@ -23,4 +23,7 @@ The script for the "Run in Processing" command should now look like [this code s
 1. Bundles > Bundle Editor > Reload Bundles
 
 ###On OS X other Processing Preferences are located here:
-  /Users/username/Library/Processing/preferences.txt
+/Users/username/Library/Processing/preferences.txt
+set editor.external to true
+
+apple+r should now reload the Processing environment from TextMate
