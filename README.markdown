@@ -27,3 +27,6 @@ The script for the "Run in Processing" command should now look like [this code s
 set editor.external to true
 
 apple+r should now reload the Processing environment from TextMate
+
+###Notes:
+- Projects must begin with a letter, project names can be alphanumeric, with underscores
