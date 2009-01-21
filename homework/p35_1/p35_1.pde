@@ -4,10 +4,11 @@ void setup() {
 }
 
 void draw() {
-  background(0);
-  stroke(203,104,0);
+  background(2,36,92);
+  stroke(255);
   strokeWeight(4);
-  line(10,10,400,400);
-  ellipseMode(CORNER);
-  ellipse(33,33,60,60);
+  line(-10,260,320,260);
+  fill(3,48,107);
+  ellipseMode(CENTER);
+  ellipse(320,200,120,120);
 }
