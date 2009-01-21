@@ -30,3 +30,12 @@ apple+r should now reload the Processing environment from TextMate
 
 ###Notes:
 - Projects must begin with a letter, project names can be alphanumeric, with underscores
+
+####Processing Folder Structure
+Project_Name Folder
+    Project_Name.pde
+    Data Folder
+      (fonts, images, sounds, etc.)
+
+####Processing Environment Info
+www.processing.org/reference/environment
