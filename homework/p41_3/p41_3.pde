@@ -11,6 +11,6 @@ void draw() {
   ellipseMode(TOP);
 
   for(int i = 1; i< 21; i++){
-    ellipse(cos(windowWidth / i) + 10, cos(windowHeight / i) + 10, (windowWidth / i) + 10, (windowHeight / i)+10);
+    ellipse(cos(width / i) + 10, cos(height / i) + 10, (width / i) + 10, (height / i)+10);
   }
 }
