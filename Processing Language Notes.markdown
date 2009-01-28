@@ -42,6 +42,8 @@ ex. println(myArray[1]); //prints b
 
 P.28 - Processing Book
 
+[Processing Reference](http://processing.org/reference)
+
 ##Line
 line(x1, y1, x2, y2);
 
@@ -59,6 +61,52 @@ ellipse(x, y, width, height);
 
 ##Bezier
 bezier(x1, y1, cx1, cy1, cx2, cy2, x2, y2);
+
+##Vertex
+beginShape(); -or- beginShape(POINTS); //use points, not lines
+                   beginShape(LINES);  //will treat params as x1, y1, x2, y2, etc..
+                   beginShape(TRIANGLES); //will create triangles from sets of coordinates
+                   beginShape(TRIANGLES_STRIP); //connects each subsequent vertex to the previous two
+                   beginShape(TRIANGLES_FAN); //draws a line from each subsequent vertex back to the first
+                   beginShape(QUAD);
+                   beginShape(QUAD_STRIP);
+vertex(x, y);
+vertex(x, y);
+...
+endShape(); -or- endShape(CLOSE); //draws a line back to initial point
+
+###Bezier shapes using vertices
+beginShape();
+vertex();
+bezierVertex();
+...
+endShape();
+
+##Fill
+fill(255);
+fill(255, 255, 255);
+fill(255, 255, 255, 255); //(Alpha channel) 4th parameter dictates transparency (0-255)
+noFill();
+
+##Stroke
+stroke(255);
+stroke(255, 255, 255);
+stroke(255, 255, 255, 255); //(Alpha channel) 4th parameter dictates transparency (0-255)
+noStroke();
+
+#Anti-Aliasing
+smooth();
+noSmooth();
+
+##ColorMode
+colorMode(HSB); //aka HSV
+colorMode(RGB);
+colorMode(RGB,100); //changes the range from 0-255 to 0-100
+
+HSV vs RGB
+Smooth gradient - use HSV
+
+##Images
 
 
 ##Good to know...
