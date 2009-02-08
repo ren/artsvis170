@@ -10,6 +10,7 @@ void draw() {
 
   frameRate(1);
 
+  //TODO: use map to handle gradation of the minute
   int s = second();
   println("second: " + s);
   for(int y = 1; y < 600; y += 60) {
