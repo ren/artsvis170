@@ -109,8 +109,44 @@ Smooth gradient - use HSV
 ##Images
 
 
+##Random
+random(10); // 0, 9.999..
+random(5, 10); // 5, 9.999..
+
+##Random Seed
+Reproducible randomness 
+randomSeed(18);
+
+##Noise
+Random, but continuous
+
+##Fonts
+Pull in at closest size
+similar to images Pfont(?) load_font(?)
+fill controls color
+text(...) 
+
+##Translate
+Only affects drawing layer, not existing pieces
+translate(100,100) // shifts drawing origin from (0,0) to (0+100,0+100)
+Additive, does not reposition to "new coordinates"
+
+##Mouse Interaction
+mouseX, mouseY - Mouse X,Y
+pmouseX, pmouseY - Past / Previous Mouse (good for speed)
+* When doing manipulations remember to use absolute value abs(mouseX - mouseX) - width can't be negative
+
+mousePressed - returns bool for is mouse pressed?
+mousePressed() - simulate mouse press
+
+##Time
+year(), month(), day(), hour(), minute(), second() #=> from system clock
+millis() - from when the program started
+
 ##Good to know...
 Single quotes (') are for characters
 Double quotes (") are for strings
 
 Drawing order is based on order in the code
+
+size(screen.width, screen.height, OPENGL); // import processing.opengl.*
